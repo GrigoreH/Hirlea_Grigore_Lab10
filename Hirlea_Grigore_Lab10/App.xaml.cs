@@ -1,13 +1,14 @@
 ﻿using System;
-using Hirlea_Grigore_Lab10.Data;
-using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Hirlea_Grigore_Lab10.Data;
+using System.IO;
 
 namespace Hirlea_Grigore_Lab10
 {
     public partial class App : Application
     {
+
         static ShoppingListDatabase database;
         public static ShoppingListDatabase Database
         {
@@ -25,7 +26,9 @@ namespace Hirlea_Grigore_Lab10
         public App()
         {
             InitializeComponent();
+
             MainPage = new NavigationPage(new ListEntryPage());
+
         }
 
         protected override void OnStart()
